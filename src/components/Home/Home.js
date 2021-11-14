@@ -16,8 +16,8 @@ function Home() {
     return (
         <>
         <div className="home">
-
 <img src={vector}  alt="vector" className="VectorBG" />
+
 
         <div className="homeTitle">
             <h4>Outfit of the day</h4>
