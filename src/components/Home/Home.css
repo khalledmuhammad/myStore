@@ -1,0 +1,296 @@
+.home{
+   
+
+left: 0;
+top: 40px;
+position: absolute;
+width: 100%;
+box-sizing: border-box;
+
+
+background: linear-gradient(287.15deg, #EFAFBC 0%, #C3E3FA 100%);
+border: 1px solid #000000;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 40px 40px 0px 0px;
+display: flex;
+flex-direction: row;
+}
+.VectorBG{
+    position: absolute;
+  width: 876.86px;
+ 
+  left: 160px;
+  top: -100px;
+  
+  transform: rotate(3.25deg);
+  }
+
+  .homeTitle{
+      flex: 1;
+    position: relative;
+    width: 658px;
+    height: 500px;
+    left: 80px;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
+  .homeTitle h4{
+    font-family: var(--font-familySec);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+
+
+}
+  .homeTitle h2{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 85px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #444444;
+
+  }
+  .homeTitle h1{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 85px;
+    
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    
+    color: #444444;
+
+  }
+  .homeTitle pre {
+      margin-top: 10px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 17px;
+    color: #656565;
+  }
+  .signUp-btn{
+      margin-top: 30px;
+      width: 150px;
+      height: 50px;
+      background-color: #FFFFFF;
+      color: #79BCCF;
+      border-radius:28px;
+	border:1px solid #79BCCF;
+	display:flex;
+    justify-content: center;
+    align-items: center;
+ 
+	cursor:pointer;
+    text-shadow:0px 0px 1px #79BCCF;
+    font-family: var(--font-family);
+    font-size: 10px;
+
+    text-transform: uppercase;
+    margin-top: 70px;
+
+    
+  }
+  .signUp-btn:hover {
+	background-color:#79BCCF;
+    color: #FFFFFF;
+}
+.signUp-btn:active {
+	position:relative;
+	top:1px;
+}
+.signUp-btn img {
+    width: 10px;
+    margin-left: 10px;
+}
+.socialLinks{
+    margin-top: 40px;
+    display: flex;
+    
+
+}
+.socialLinks img {
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.socialLinks img:hover {
+    transform: translateY(-5px) scale(1.2);
+
+    transition: transform 200ms ease-out;
+}
+
+/* products */
+
+.products{
+    margin-top: 10px;
+    flex: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.products .thumbJacket{
+    width: 508.86px;
+    height: 400;
+    margin-left: 150px;
+}
+.dot{
+    margin-left: 110px;
+    width: 470px;
+}
+.products .product_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* reponsive */
+@media screen and (max-width: 1256px) {
+    .homeTitle h1{
+      
+        font-size: 50px;
+        }
+        .homeTitle h4{        font-size: 10px;
+        }
+        .homeTitle h2{        font-size: 40px;
+        }
+        .homeTitle pre{
+            font-size: 7px;
+
+        }
+}
+@media screen and (max-width: 1168px) {
+    .homeTitle h1{
+      
+        font-size: 45px;
+        }
+        .homeTitle h4{        font-size: 7px;
+        }
+        .homeTitle h2{        font-size: 35px;
+        }
+        .homeTitle pre{
+            font-size: 5px;
+
+        }
+}
+
+@media screen and (max-width: 1050px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        min-width: 100%;
+    }
+    .products{
+        text-align: center;
+        margin-top: 100px;
+        margin-right: 150px;
+
+   
+
+        
+    }
+    .homeTitle{
+        justify-content: center;
+        align-items: center;
+        margin-right: 150px;
+
+    }
+    .dot{
+        display: none;
+    }
+
+    .products .product_content {
+
+    justify-content: center;
+        align-items: center;
+        margin-left: 50px;
+    
+}
+
+ 
+}
+@media screen and (max-width: 1000px) {
+    .home {
+        display: grid;
+        text-align: center;
+    }
+    .products{
+        display: flex;
+        margin-top: 100px;
+        justify-content: 
+        flex-start;
+
+        
+    }
+
+    
+
+ 
+
+
+}
+@media screen and (max-width: 518px) {
+    .thumbJacket{
+        margin-right: 50px;
+    }
+    .products .product_content {
+
+        justify-content: center;
+            align-items: center;
+            margin-left: 100px;
+        
+    }
+    
+    
+
+    
+
+ 
+}
+ /* 
+@media screen and (max-width: 650px) {
+    .aboutcontent h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+  
+
+    .aboutcontent p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+  
+}
+
+@media screen and (max-width: 490px) {
+    .aboutcontent h1 {
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+   .aboutcontent p {
+        font-size: 10px;
+        line-height: 24px;
+    }
+
+  
+} 
+ */
